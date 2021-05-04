@@ -1,0 +1,20 @@
+
+
+<html>
+	<head><title>PAGE POTIN</title></head>
+	<body>
+		<h1>PAGE POTIN</h1>
+		<h2>Voici la page du potin n°#{params["id"]} !</h2>
+		<% one_gossips.each do |gossipo| %>
+        <p>
+         Son auteur :  <%= gossipo.author %><br/>
+         Le contenu du potin :  <%= gossipo.gossip %>
+        </p>
+      <% end %>
+
+	<a title='Index' href='http://localhost:4567/'>Lien pour retourner à l'Accueil</a>
+
+
+	</body>
+</html>
+		 
